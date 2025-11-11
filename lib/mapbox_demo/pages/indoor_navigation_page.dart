@@ -213,7 +213,7 @@ class _IndoorNavigationPageState extends State<IndoorNavigationPage> {
     // centra donde estés, o al centro del campus
     try {
       _pos ??= await gl.Geolocator.getCurrentPosition(
-        locationSettings: const gl.LocationSettings(accuracy: gl.LocationAccuracy.best),
+       locationSettings: const gl.LocationSettings(accuracy: gl.LocationAccuracy.best),
       );
     } catch (_) {}
 
